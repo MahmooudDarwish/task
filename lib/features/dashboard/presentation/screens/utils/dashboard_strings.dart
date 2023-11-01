@@ -1,5 +1,5 @@
 class DashBoardString {
-  static const appBarHeader = "home";
+  static const appBarHeader = "Home";
   static const heyUser = "Hey,";
   static const welcomeMessageHeader =
       "Multi-Services for Your Real Estate Needs";
@@ -20,6 +20,9 @@ class DashBoardString {
   static const bottomNavBarAssets = "Assets";
   static const bottomNavBarSupport = "Support";
   static const bottomNavBarProfile = "Profile";
+  static const noOrdersFoundMessageHeader = "No orders found";
+  static const noOrdersFoundMessageBody =
+      "you can place your needed orders to let serve you.";
 
   static String getOrders(int ordersNum) {
     return "$orders($ordersNum)";
