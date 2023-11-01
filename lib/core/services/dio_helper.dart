@@ -1,4 +1,3 @@
-import 'package:any_deck/core/network/api_constance.dart';
 import 'package:dio/dio.dart';
 
 class DioHelper {
@@ -7,7 +6,7 @@ class DioHelper {
   init() {
     dio = Dio(
       BaseOptions(
-        baseUrl: ApiConstance.baseUrl,
+        //baseUrl: ApiConstance.baseUrl,
         receiveDataWhenStatusError: true,
       ),
     );
