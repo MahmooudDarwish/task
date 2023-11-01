@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:task/core/network/api_constance.dart';
 
 class DioHelper {
   late Dio dio;
@@ -6,7 +7,7 @@ class DioHelper {
   init() {
     dio = Dio(
       BaseOptions(
-        //baseUrl: ApiConstance.baseUrl,
+        baseUrl: ApiConstance.baseUrl,
         receiveDataWhenStatusError: true,
       ),
     );

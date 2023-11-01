@@ -1,0 +1,31 @@
+class DashBoardString {
+  static const appBarHeader = "home";
+  static const heyUser = "Hey,";
+  static const welcomeMessageHeader =
+      "Multi-Services for Your Real Estate Needs";
+  static const welcomeMessageBody =
+      "Explore diverse real estate services for all your needs: property management, construction, insurance and more in one place.";
+  static const order = "Order";
+  static const categories = "Categories";
+  static const services = "Services";
+  static const orders = "Orders";
+  static const categoriesView = "Categories View";
+  static const seeAll = "see all";
+  static const constructions = "Constructions";
+  static const insurances = "Insurances";
+  static const legal = "Legal";
+  static const buyAndSell = "Buy & Sell";
+  static const accountingServices = "Accounting Services";
+  static const bottomNavBarHome = "Home";
+  static const bottomNavBarAssets = "Assets";
+  static const bottomNavBarSupport = "Support";
+  static const bottomNavBarProfile = "Profile";
+
+  static String getOrders(int ordersNum) {
+    return "$orders($ordersNum)";
+  }
+
+  static String welcomeUser(String userName) {
+    return "$heyUser $userName";
+  }
+}

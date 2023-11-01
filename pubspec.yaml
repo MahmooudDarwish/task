@@ -39,6 +39,9 @@ dependencies:
   go_router: ^12.0.1
   dio_helper_flutter: ^1.0.13
   get_it: ^7.6.4
+  equatable: ^2.0.5
+  dartz: ^0.10.1
+
 
 
 dev_dependencies:
