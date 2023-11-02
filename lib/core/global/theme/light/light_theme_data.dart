@@ -3,7 +3,7 @@ import 'package:task/features/dashboard/presentation/screens/utils/dashbaord_col
 import 'package:google_fonts/google_fonts.dart';
 
 ThemeData getThemeDataLight() => ThemeData(
-  bottomNavigationBarTheme: BottomNavigationBarThemeData(),
+  bottomNavigationBarTheme: const BottomNavigationBarThemeData(),
     appBarTheme: AppBarTheme(
       elevation: 0,
         iconTheme: const IconThemeData(
