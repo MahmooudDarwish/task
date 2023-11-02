@@ -12,3 +12,11 @@ class ChangeBottomNavBarItem extends DashboardEvent {
   // TODO: implement props
   List<Object?> get props => [selectedBottomNavBatItem];
 }
+
+class TabBarItemsClicked extends DashboardEvent {
+  final TabBarItemType tabBarItemType;
+  const TabBarItemsClicked({required this.tabBarItemType});
+  @override
+  // TODO: implement props
+  List<Object?> get props => [tabBarItemType];
+}

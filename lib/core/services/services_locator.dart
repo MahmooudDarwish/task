@@ -1,3 +1,4 @@
+import 'package:flutter/animation.dart';
 import 'package:get_it/get_it.dart';
 import 'package:go_router/go_router.dart';
 import 'package:task/core/routing/routes.dart';
@@ -20,7 +21,11 @@ class ServicesLocator {
 
     /// Use Cases
 
+    ///TICKER PROVIDER
+
     /// Bloc
     sl.registerLazySingleton<DashboardBloc>(() => DashboardBloc());
+
+
   }
 }

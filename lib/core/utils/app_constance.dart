@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:task/core/icons/custom_icons.dart';
+import 'package:task/core/utils/app_colors.dart';
 import 'package:task/core/utils/app_strings.dart';
+import 'package:task/features/dashboard/presentation/components/default_button.dart';
+import 'package:task/features/dashboard/presentation/screens/utils/dashboard_strings.dart';
 import 'package:task/features/dashboard/presentation/screens/views/card_page_view.dart';
+import 'package:task/features/dashboard/presentation/screens/views/category_list.dart';
+import 'package:task/features/dashboard/presentation/screens/views/order_list.dart';
+import 'package:task/features/dashboard/presentation/screens/views/service_list.dart';
 
 class AppConstance {
   static const clappingHandsSvg = "assets/images/clappingHand.png";
@@ -28,4 +34,11 @@ class AppConstance {
     CardPageView()
   ];
 
+  static List<Widget> tapBarTabs = [
+    defaultButton(function: () {}, text: DashboardString.categories , ),
+    defaultButton(function: () {}, text: DashboardString.services,background: AppColors.semiActiveTapBarColor),
+    defaultButton(function: () {}, text: DashboardString.order),
+  ];
+
+  static const tapBarView = [CategoryList(), ServiceList(), OrderList()];
 }

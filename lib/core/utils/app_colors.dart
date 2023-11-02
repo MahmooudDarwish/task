@@ -23,6 +23,8 @@ class AppColors{
   //color for third tap bar button
   static const inActiveTapBarColor = Color(0xFFFAFAFA);
 
+  static const tapBarBorderColor = Color(0xFFF2F2F2);
+
   ///TEXT COLORS
   static const cardButtonHintTextColor = Color(0xFFFFFFFF);
 
