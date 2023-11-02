@@ -8,7 +8,7 @@ class Routes {
     GoRoute(
       name: RouteNames.dashboard,
       path: RoutePath.initialRoutePath,
-      builder: (context, state) => const DashBoardScreen(),
+      builder: (context, state) => const DashboardScreen(),
     ),
   ];
 }

@@ -1,4 +1,4 @@
-class DashBoardString {
+class DashboardString {
   static const appBarHeader = "Home";
   static const heyUser = "Hey,";
   static const welcomeMessageHeader =
@@ -16,10 +16,7 @@ class DashBoardString {
   static const legal = "Legal";
   static const buyAndSell = "Buy & Sell";
   static const accountingServices = "Accounting Services";
-  static const bottomNavBarHome = "Home";
-  static const bottomNavBarAssets = "Assets";
-  static const bottomNavBarSupport = "Support";
-  static const bottomNavBarProfile = "Profile";
+
   static const noOrdersFoundMessageHeader = "No orders found";
   static const noOrdersFoundMessageBody =
       "you can place your needed orders to let serve you.";

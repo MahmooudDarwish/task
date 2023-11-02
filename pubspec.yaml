@@ -42,6 +42,8 @@ dependencies:
   equatable: ^2.0.5
   dartz: ^0.10.1
   google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+
 
 
 
@@ -83,6 +85,11 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+  fonts:
+    - family: CustomIcons
+      fonts:
+        - asset: assets/icons/fonts/CustomIcons.ttf
+
   # fonts:
   #   - family: Schyler
   #     fonts:

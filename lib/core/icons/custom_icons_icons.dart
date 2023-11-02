@@ -9,7 +9,7 @@
 ///   fonts:
 ///    - family:  Custom_icons
 ///      fonts:
-///       - asset: fonts/Custom_icons.ttf
+///       - asset: fonts/CustomIcons.ttf
 ///
 /// 
 ///
