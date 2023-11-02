@@ -3,12 +3,15 @@ import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:meta/meta.dart';
 
 part 'dashboard_event.dart';
 part 'dashboard_state.dart';
 
 class DashboardBloc extends Bloc<DashboardEvent, DashboardScreenState> {
+  final pageViewController = PageController();
+
   DashboardBloc() : super(const DashboardScreenState()) {
     on<ChangeBottomNavBarItem>(_changeBottomNavBarItem);
   }

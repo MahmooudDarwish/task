@@ -16,6 +16,8 @@ class DashboardString {
   static const legal = "Legal";
   static const buyAndSell = "Buy & Sell";
   static const accountingServices = "Accounting Services";
+  static const cardMessageHeader =
+      "Multi-Services for Your Real Estate Needs";
 
   static const noOrdersFoundMessageHeader = "No orders found";
   static const noOrdersFoundMessageBody =

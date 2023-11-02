@@ -4,21 +4,46 @@ import 'package:task/features/dashboard/presentation/screens/utils/dashbaord_col
 import 'package:google_fonts/google_fonts.dart';
 
 ThemeData getThemeDataLight() => ThemeData(
-    bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        selectedItemColor: AppColors.bottomNavBarActiveItemColor,
-        unselectedItemColor: AppColors.bottomNavBarDisableItemColor),
-    appBarTheme: AppBarTheme(
-        elevation: 0,
-        iconTheme: const IconThemeData(
-          color: AppColors.drawerIconColor,
-        ),
-        color: AppColors.appBarColor,
-        centerTitle: true,
-        titleTextStyle: getOutfitFontStyle(
-            fontWeight: FontWeight.w500,
-            fontSize: 20,
-            fontColor: DashboardColors.appBarHeaderTextColor)));
-
+      primarySwatch: const MaterialColor(0xFFD61116, {
+        50: Color(0xFFFFECEC),
+        100: Color(0xFFFFD2D2),
+        200: Color(0xFFFFACAC),
+        300: Color(0xFFFF8585),
+        400: Color(0xFFFF5E5E),
+        500: Color(0xFFD61116),
+        600: Color(0xFFFF3D3D),
+        700: Color(0xFFFF2C2C),
+        800: Color(0xFFFF1A1A),
+        900: Color(0xFFFF0909),
+      }),
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+          selectedItemColor: AppColors.bottomNavBarActiveItemColor,
+          unselectedItemColor: AppColors.bottomNavBarDisableItemColor),
+      appBarTheme: AppBarTheme(
+          elevation: 0,
+          iconTheme: const IconThemeData(
+            color: AppColors.drawerIconColor,
+          ),
+          color: AppColors.appBarColor,
+          centerTitle: true,
+          titleTextStyle: getOutfitFontStyle(
+              fontWeight: FontWeight.w500,
+              fontSize: 20,
+              fontColor: DashboardColors.appBarHeaderTextColor)),
+      textTheme: TextTheme(
+          titleLarge: getOutfitFontStyle(
+              fontWeight: FontWeight.w500,
+              fontSize: 16,
+              fontColor: DashboardColors.heyUserTextColor),
+          bodyMedium: getOutfitFontStyle(
+              fontSize: 14,
+              fontColor: DashboardColors.welcomeUserBodyTextColor,
+              fontWeight: FontWeight.w300),
+          labelLarge: getOutfitFontStyle(
+              fontWeight: FontWeight.w500,
+              fontSize: 14,
+              fontColor: AppColors.cardButtonHintTextColor)),
+    );
 
 TextStyle getOutfitFontStyle(
     {required FontWeight fontWeight,
