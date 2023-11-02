@@ -22,7 +22,7 @@ class DioHelper {
     dio.options.headers = {
       'Content-Type': 'application/json',
       'lang': lang,
-      'Authorization': "Bearer $token" ?? "",
+      'Authorization': "Bearer $token" ,
     };
     return await dio.get(
       url,
@@ -40,7 +40,7 @@ class DioHelper {
     dio.options.headers = {
       'Content-Type': 'application/json',
       'lang': lang,
-      'Authorization': "Bearer $token" ?? "",
+      'Authorization': "Bearer $token"
     };
     return await dio.post(
       url,
