@@ -7,7 +7,6 @@ import 'package:task/core/services/services_locator.dart';
 void main() {
   ServicesLocator().init();
   sl<DioHelper>().init();
-
   runApp(const MyApp());
 }
 
