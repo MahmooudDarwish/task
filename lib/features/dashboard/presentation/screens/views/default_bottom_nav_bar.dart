@@ -14,9 +14,10 @@ class DefaultBottomNavBar extends StatelessWidget {
         return BottomNavigationBar(
           items: AppConstance.bottomNavBarItems,
           currentIndex: state.selectedBottomNavBatItem,
+          type: BottomNavigationBarType.fixed,
           onTap: (value) {
             sl<DashboardBloc>()
-                .add(ChangeBottomNavBarItem(selectedBottomNavBatItem: value));
+                .add(ChangeBottomNavBarItemEvent(selectedBottomNavBatItem: value));
           },
         );
       },

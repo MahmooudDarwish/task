@@ -5,17 +5,17 @@ abstract class DashboardEvent extends Equatable {
   const DashboardEvent();
 }
 
-class ChangeBottomNavBarItem extends DashboardEvent {
+class ChangeBottomNavBarItemEvent extends DashboardEvent {
   final int selectedBottomNavBatItem;
-  const ChangeBottomNavBarItem({required this.selectedBottomNavBatItem});
+  const ChangeBottomNavBarItemEvent({required this.selectedBottomNavBatItem});
   @override
   // TODO: implement props
   List<Object?> get props => [selectedBottomNavBatItem];
 }
 
-class TabBarItemsClicked extends DashboardEvent {
+class TabBarItemsClickedEvent extends DashboardEvent {
   final TabBarItemType tabBarItemType;
-  const TabBarItemsClicked({required this.tabBarItemType});
+  const TabBarItemsClickedEvent({required this.tabBarItemType});
   @override
   // TODO: implement props
   List<Object?> get props => [tabBarItemType];

@@ -24,7 +24,7 @@ class DashboardString {
       "you can place your needed orders to let serve you.";
 
   static String getOrders(int ordersNum) {
-    return "$orders($ordersNum)";
+    return "$orders ($ordersNum)";
   }
 
   static String welcomeUser(String userName) {

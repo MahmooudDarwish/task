@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppColors{
+class AppColors {
   ///THEME COLORS
   static const cardColor = Color(0xFFFFF5F5);
 
@@ -36,7 +36,6 @@ class AppColors{
 
   static const inActiveTapBarHintTextColor = Color(0xFF101010);
 
-
   ///ICON COLORS
   static const drawerIconColor = Color(0xFF101010);
 
@@ -47,7 +46,4 @@ class AppColors{
   static const activeDotColor = Color(0xFFD61116);
 
   static const inActiveDotColor = Color(0xFFE0E0E0);
-
-
-
 }

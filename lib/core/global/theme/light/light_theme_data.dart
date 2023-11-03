@@ -42,7 +42,15 @@ ThemeData getThemeDataLight() => ThemeData(
           labelLarge: getOutfitFontStyle(
               fontWeight: FontWeight.w500,
               fontSize: 14,
-              fontColor: AppColors.cardButtonHintTextColor)),
+              fontColor: AppColors.cardButtonHintTextColor),
+          labelMedium: getOutfitFontStyle(
+              fontWeight: FontWeight.w400,
+              fontSize: 14,
+              fontColor: AppColors.activeTapBarHintTextColor),
+          titleMedium: getOutfitFontStyle(
+              fontWeight: FontWeight.w400,
+              fontSize: 16,
+              fontColor: DashboardColors.categoriesItemsDescriptionTextColor)),
     );
 
 TextStyle getOutfitFontStyle(
