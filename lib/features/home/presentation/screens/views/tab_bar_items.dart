@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import 'package:task/core/services/services_locator.dart';
 import 'package:task/core/utils/app_colors.dart';
 import 'package:task/core/utils/enums.dart';
@@ -20,6 +22,7 @@ class TabBarItems extends StatelessWidget {
           children: [
             Expanded(
                 child: defaultButton(
+
                     radius: 360.r,
                     background: state.selectedTabBarItem ==
                             TabBarItemType.users
@@ -27,11 +30,13 @@ class TabBarItems extends StatelessWidget {
                         : AppColors.inActiveTapBarColor,
                     textStyle:
                         state.selectedTabBarItem == TabBarItemType.users
+
                             ? Theme.of(context).textTheme.labelMedium
                             : Theme.of(context).textTheme.labelMedium!.copyWith(
                                 color: AppColors.inActiveTapBarHintTextColor),
                     function: () {
                       sl<HomeBloc>().add(const TabBarItemsClickedEvent(
+
                           tabBarItemType: TabBarItemType.users));
                     },
                     text: HomeString.users,
@@ -42,6 +47,7 @@ class TabBarItems extends StatelessWidget {
             Expanded(
                 child: defaultButton(
                     radius: 360.r,
+
                     background:
                         state.selectedTabBarItem == TabBarItemType.services
                             ? AppColors.activeTapBarColor
@@ -56,9 +62,11 @@ class TabBarItems extends StatelessWidget {
                           tabBarItemType: TabBarItemType.services));
                     },
                     text: HomeString.services,
+
                     height: 30.h)),
              SizedBox(
               width: 8.w,
+
             ),
             Expanded(
                 child: defaultButton(
@@ -76,7 +84,9 @@ class TabBarItems extends StatelessWidget {
                         ? Theme.of(context).textTheme.labelMedium
                         : Theme.of(context).textTheme.labelMedium!.copyWith(
                             color: AppColors.inActiveTapBarHintTextColor),
+
                     height: 30.h)),
+
           ],
         );
       },

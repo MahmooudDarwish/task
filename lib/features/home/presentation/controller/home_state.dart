@@ -2,9 +2,11 @@ part of 'home_bloc.dart';
 
 @immutable
 class HomeScreenState extends Equatable {
+
   final List<User> userList;
   final RequestState getUsersRequestState;
   final String getUsersMessage;
+
   final int selectedBottomNavBatItem;
   final TabBarItemType selectedTabBarItem;
   final List<String> serviceList;
@@ -12,6 +14,7 @@ class HomeScreenState extends Equatable {
   final List<String> categoryList;
 
   const HomeScreenState(
+
       {this.userList = const [],
       this.getUsersRequestState = RequestState.loading,
       this.getUsersMessage = "",
@@ -42,6 +45,7 @@ class HomeScreenState extends Equatable {
         getUsersMessage: getUsersMessage ?? this.getUsersMessage,
         selectedBottomNavBatItem:
             selectedBottomNavBatItem ?? this.selectedBottomNavBatItem,
+
         selectedTabBarItem: selectedTabBarItem ?? this.selectedTabBarItem,
         ordersList: ordersList ?? this.ordersList,
         serviceList: serviceList ?? this.serviceList,
@@ -49,6 +53,7 @@ class HomeScreenState extends Equatable {
   }
 
   @override
+
 
   List<Object?> get props => [
         userList,
@@ -60,4 +65,5 @@ class HomeScreenState extends Equatable {
         ordersList,
         categoryList
       ];
+
 }

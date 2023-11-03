@@ -1,17 +1,21 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task/core/utils/app_colors.dart';
+
 import 'package:task/features/home/presentation/screens/views/card_slider.dart';
 import 'package:task/features/home/presentation/screens/views/tab_bar_items.dart';
 import 'package:task/features/home/presentation/screens/views/tab_bar_page_view.dart';
 import 'package:task/features/home/presentation/screens/views/welcom_user.dart';
 import 'package:task/features/home/presentation/screens/views/wlecome_message.dart';
 
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
         body: Column(
           children: [
@@ -50,6 +54,7 @@ class HomeScreen extends StatelessWidget {
                           child:  Padding(
                             padding: EdgeInsets.all(8.0.r),
                             child: const TabBarItems(),
+
                           ),
                         ),
                       ),
@@ -57,9 +62,11 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                 ),
+
               ),
             )
           ],
         ));
+
   }
 }

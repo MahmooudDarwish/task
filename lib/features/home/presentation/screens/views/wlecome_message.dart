@@ -8,13 +8,16 @@ class WelcomeMessage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+
       padding:  EdgeInsets.symmetric(vertical: 8.h),
+
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(
             width: double.infinity,
+
             height: 40.h,
             child: Text(
               HomeString.welcomeMessageHeader,
@@ -26,6 +29,7 @@ class WelcomeMessage extends StatelessWidget {
             ),
           ),
            SizedBox(height: 4.h),
+
           SizedBox(
             width: double.infinity,
             child: Text(

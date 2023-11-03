@@ -21,6 +21,7 @@ class HomeString {
   static const accountingServices = "Accounting Services";
   static const cardMessageHeader = "Multi-Services for Your Real Estate Needs";
 
+
   static const users = "Users";
 
   static String getOrders(int ordersNum) {

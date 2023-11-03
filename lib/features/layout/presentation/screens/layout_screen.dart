@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:task/core/services/services_locator.dart';
 import 'package:task/core/utils/app_constance.dart';
 import 'package:task/features/layout/presentation/screens/views/default_bottom_nav_bar.dart';
 import 'package:task/features/layout/presentation/controller/layout_bloc.dart';
@@ -9,6 +10,20 @@ class LayoutScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    return BlocProvider(
+      create: (context) => sl<LayoutBloc>(),
+      child: const LayoutView(),
+    );
+  }
+}
+
+class LayoutView extends StatelessWidget {
+  const LayoutView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+
     return BlocBuilder<LayoutBloc, LayoutScreenState>(
       builder: (context, state) {
         return Scaffold(

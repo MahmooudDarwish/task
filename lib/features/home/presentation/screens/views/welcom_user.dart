@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import 'package:task/core/utils/app_constance.dart';
 import 'package:task/features/home/presentation/screens/utils/home_strings.dart';
 
@@ -9,6 +11,7 @@ class WelcomeUser extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
+
       padding:  EdgeInsets.only(bottom: 8.0.h),
       child: Row(
         children: [
@@ -19,6 +22,7 @@ class WelcomeUser extends StatelessWidget {
           ),
           Padding(
             padding:  EdgeInsets.only(left: 4.0.w, right: 2.w),
+
             child: Text(
               HomeString.welcomeUser("Ahmed"),
               style: Theme
@@ -29,8 +33,10 @@ class WelcomeUser extends StatelessWidget {
           ),
           Image.asset(
             AppConstance.clappingHandsImage,
+
             width: 20.w,
             height: 20.h,
+
           )
         ],
       ),

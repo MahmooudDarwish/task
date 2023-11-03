@@ -14,15 +14,18 @@ part 'home_state.dart';
 
 class HomeBloc extends Bloc<HomeEvent, HomeScreenState> {
   final pageViewController = PageController();
+
   GetUsersUseCase getUsersUseCase;
   HomeBloc(this.getUsersUseCase) : super(const HomeScreenState()) {
     on<TabBarItemsClickedEvent>(_tabBarItemsClicked);
     on<GetUsersEvent>(_getUsers);
   }
+
   FutureOr<void> _tabBarItemsClicked(
       TabBarItemsClickedEvent event, Emitter<HomeScreenState> emit) {
     emit(state.copyWith(selectedTabBarItem: event.tabBarItemType));
   }
+
 
   FutureOr<void> _getUsers(event, Emitter<HomeScreenState> emit) async {
     final result = await getUsersUseCase.call(const NoParameters());
@@ -35,4 +38,5 @@ class HomeBloc extends Bloc<HomeEvent, HomeScreenState> {
             getUsersRequestState: RequestState.loaded,
             userList: rightUserList)));
   }
+
 }

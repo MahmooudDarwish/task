@@ -12,7 +12,9 @@ class AppColors {
 
   static const tapBarItemColor = Color(0xFFFFFFFF);
 
+
   static const tapBarItemShadowColor =  Color(0x0F000008);
+
 
   static const bottomNavBarColor = Color(0xFFFFFFFF);
 

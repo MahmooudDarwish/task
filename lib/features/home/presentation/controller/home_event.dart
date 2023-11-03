@@ -10,6 +10,7 @@ class TabBarItemsClickedEvent extends HomeEvent {
   const TabBarItemsClickedEvent({required this.tabBarItemType});
   @override
 
+
   List<Object?> get props => [tabBarItemType];
 }
 
@@ -18,3 +19,4 @@ class GetUsersEvent extends HomeEvent {
 
   List<Object?> get props => [];
 }
+

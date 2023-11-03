@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -15,12 +16,14 @@ class CardSlider extends StatelessWidget {
     return Column(
       children: [
         Padding(
+
           padding:  EdgeInsets.only(bottom: 10.0.h),
           child: Container(
             height: 152,
             padding:  EdgeInsets.only(left: 8.w, top: 8.h, bottom: 12.h),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8.r),
+
                 color: AppColors.cardColor),
             child: PageView(
               controller: sl<HomeBloc>().pageViewController,
@@ -31,12 +34,14 @@ class CardSlider extends StatelessWidget {
         SmoothPageIndicator(
           controller: sl<HomeBloc>().pageViewController,
           count: AppConstance.pageViewChildren.length,
+
           effect:  ExpandingDotsEffect(
               activeDotColor: AppColors.activeDotColor,
               dotColor: AppColors.inActiveDotColor,
               dotHeight: 8.h,
               dotWidth: 8.w,
               expansionFactor: 4.w),
+
         )
       ],
     );
