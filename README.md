@@ -6,11 +6,14 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+Flutter project to show users through api with premium ui done with following:
+   1- Bloc StateMangement
+   2- Clean architecture
+   3- Api Integration by DioHelper
+   4- navigation by GoRoute
+   5- Dependency injection by getIt package 
+   
+![applicationScreen](https://github.com/MahmooudDarwish/task/assets/147933220/60a98548-57ce-4aa6-8886-ddae9d4fa17d)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   
+![applicationScreen](https://github.com/MahmooudDarwish/task/assets/147933220/df8f26eb-2d70-40cb-9342-edac83cd4fc4)
