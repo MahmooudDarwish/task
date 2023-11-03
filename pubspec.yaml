@@ -76,6 +76,8 @@ flutter:
   assets:
     - assets/images/clappingHand.png
     - assets/images/manHoldingBuilding.png
+    -  assets/images/emptyState.png
+
 
   #   - images/a_dot_ham.jpeg
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:task/core/utils/app_colors.dart';
-import 'package:task/features/dashboard/presentation/screens/utils/dashbaord_colors.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:task/features/home/presentation/screens/utils/home_colors.dart';
 
 ThemeData getThemeDataLight() => ThemeData(
       primarySwatch: const MaterialColor(0xFFD61116, {
@@ -17,6 +17,7 @@ ThemeData getThemeDataLight() => ThemeData(
         900: Color(0xFFFF0909),
       }),
       bottomNavigationBarTheme: const BottomNavigationBarThemeData(
+        backgroundColor: AppColors.bottomNavBarColor,
           selectedItemColor: AppColors.bottomNavBarActiveItemColor,
           unselectedItemColor: AppColors.bottomNavBarDisableItemColor),
       appBarTheme: AppBarTheme(
@@ -29,15 +30,15 @@ ThemeData getThemeDataLight() => ThemeData(
           titleTextStyle: getOutfitFontStyle(
               fontWeight: FontWeight.w500,
               fontSize: 20,
-              fontColor: DashboardColors.appBarHeaderTextColor)),
+              fontColor: HomeColors.appBarHeaderTextColor)),
       textTheme: TextTheme(
           titleLarge: getOutfitFontStyle(
               fontWeight: FontWeight.w500,
               fontSize: 16,
-              fontColor: DashboardColors.heyUserTextColor),
+              fontColor: HomeColors.heyUserTextColor),
           bodyMedium: getOutfitFontStyle(
               fontSize: 14,
-              fontColor: DashboardColors.welcomeUserBodyTextColor,
+              fontColor: HomeColors.welcomeUserBodyTextColor,
               fontWeight: FontWeight.w300),
           labelLarge: getOutfitFontStyle(
               fontWeight: FontWeight.w500,
@@ -50,7 +51,7 @@ ThemeData getThemeDataLight() => ThemeData(
           titleMedium: getOutfitFontStyle(
               fontWeight: FontWeight.w400,
               fontSize: 16,
-              fontColor: DashboardColors.categoriesItemsDescriptionTextColor)),
+              fontColor: HomeColors.categoriesItemsDescriptionTextColor)),
     );
 
 TextStyle getOutfitFontStyle(

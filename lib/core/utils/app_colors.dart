@@ -6,13 +6,15 @@ class AppColors {
 
   static const appBarColor = Color(0xFFFFFFFF);
 
-  static const tapBarColor = Color(0xFFFFFFFF);
+  static const tapBarContainerColor = Color(0xFFFFFFFF);
 
   static const tapBarViewColor = Color(0xFFFFFFFF);
 
-  static const bottomNavBarColor = Color(0xFFFFFFFF);
+  static const tapBarItemColor = Color(0xFFFFFFFF);
 
-  static const bodyColor = Color(0xFFFAFAFA);
+  static const tapBarItemShadowColor =  Color(0x1F000000);
+
+  static const bottomNavBarColor = Color(0xFFFFFFFF);
 
   static const cardButtonColor = Color(0xFFD61116);
 
