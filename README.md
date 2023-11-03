@@ -8,13 +8,14 @@ This project is a starting point for a Flutter application.
 
 Flutter project to show users through api with premium ui done with following:
 
+
    1- Bloc StateMangement
    
    2- Clean architecture
    
    3- Api Integration by DioHelper
    
-   4- navigation by GoRoute
+   4- Navigation by GoRoute
    
    5- Dependency injection by getIt package 
    
