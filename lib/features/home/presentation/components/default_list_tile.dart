@@ -6,7 +6,7 @@ import 'package:task/features/home/presentation/screens/utils/home_colors.dart';
 Widget defaultListTile(
     {required String title,
     IconData trailingIcon = Icons.arrow_forward,
-    required IconData leadingIcon}) {
+    required Widget leadingWidget}) {
   return Padding(
     padding: const EdgeInsets.symmetric(vertical: 8.0),
     child: Container(
@@ -30,8 +30,7 @@ Widget defaultListTile(
         ),
         trailing: Icon(trailingIcon,
             size: 24, color: HomeColors.categoriesItemsGoIconColor),
-        leading: Icon(leadingIcon,
-            color: HomeColors.categoriesIconsColor, size: 24),
+        leading: leadingWidget,
       ),
     ),
   );

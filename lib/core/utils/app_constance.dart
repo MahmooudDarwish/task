@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:task/core/icons/custom_icons.dart';
 import 'package:task/core/utils/app_strings.dart';
 import 'package:task/features/assets/presentation/screens/assets_screen.dart';
+import 'package:task/features/home/presentation/components/default_icon.dart';
 import 'package:task/features/home/presentation/components/default_list_tile.dart';
 import 'package:task/features/home/presentation/screens/home_screen.dart';
 import 'package:task/features/home/presentation/screens/utils/home_strings.dart';
@@ -52,15 +53,18 @@ class AppConstance {
   static List<Widget> categoryListView = [
     defaultListTile(
         title: HomeString.constructions,
-        leadingIcon: CustomIcons.constructions),
+        leadingWidget: defaultIcon(icon: CustomIcons.constructions)),
     defaultListTile(
-        title: HomeString.insurances, leadingIcon: CustomIcons.insurances),
+        title: HomeString.insurances,
+        leadingWidget: defaultIcon(icon: CustomIcons.insurances)),
     defaultListTile(
-        title: HomeString.legal, leadingIcon: CustomIcons.legal),
+        title: HomeString.legal,
+        leadingWidget: defaultIcon(icon: CustomIcons.legal)),
     defaultListTile(
-        title: HomeString.buyAndSell, leadingIcon: CustomIcons.shop),
+        title: HomeString.buyAndSell,
+        leadingWidget: defaultIcon(icon: CustomIcons.shop)),
     defaultListTile(
         title: HomeString.accountingServices,
-        leadingIcon: CustomIcons.accounting),
+        leadingWidget: defaultIcon(icon: CustomIcons.accounting)),
   ];
 }
