@@ -1,5 +1,8 @@
-class DashBoardString {
-  static const appBarHeader = "Home";
+import 'package:task/core/utils/enums.dart';
+
+class HomeString {
+
+
   static const heyUser = "Hey,";
   static const welcomeMessageHeader =
       "Multi-Services for Your Real Estate Needs";
@@ -16,19 +19,23 @@ class DashBoardString {
   static const legal = "Legal";
   static const buyAndSell = "Buy & Sell";
   static const accountingServices = "Accounting Services";
-  static const bottomNavBarHome = "Home";
-  static const bottomNavBarAssets = "Assets";
-  static const bottomNavBarSupport = "Support";
-  static const bottomNavBarProfile = "Profile";
-  static const noOrdersFoundMessageHeader = "No orders found";
-  static const noOrdersFoundMessageBody =
-      "you can place your needed orders to let serve you.";
+  static const cardMessageHeader = "Multi-Services for Your Real Estate Needs";
+
+  static const users = "Users";
 
   static String getOrders(int ordersNum) {
-    return "$orders($ordersNum)";
+    return "$orders ($ordersNum)";
   }
 
   static String welcomeUser(String userName) {
     return "$heyUser $userName";
+  }
+
+  static String noListFound(TabBarItemType tabBarItemType) {
+    return "No ${tabBarItemType.name} found";
+  }
+
+  static String noListFoundHint(TabBarItemType tabBarItemType) {
+    return "you can place your needed ${tabBarItemType.name} to let serve you.";
   }
 }
