@@ -14,10 +14,8 @@ Flutter project to show users through api with premium ui done with following:
    2- Clean architecture
    
    3- Api Integration by DioHelper
-   
-   4- Navigation by GoRoute
-   
-   5- Dependency injection by getIt package 
+      
+   4- Dependency injection by getIt package 
    
 ![applicationScreen](https://github.com/MahmooudDarwish/task/assets/147933220/60a98548-57ce-4aa6-8886-ddae9d4fa17d)
 
