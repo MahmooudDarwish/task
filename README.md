@@ -7,6 +7,7 @@ A new Flutter project.
 This project is a starting point for a Flutter application.
 
 Flutter project to show users through api with premium ui done with following:
+
    1- Bloc StateMangement
    
    2- Clean architecture
