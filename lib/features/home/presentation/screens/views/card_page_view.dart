@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import 'package:task/core/utils/app_constance.dart';
 import 'package:task/features/home/presentation/components/default_button.dart';
 import 'package:task/features/home/presentation/screens/utils/home_strings.dart';
@@ -20,14 +23,16 @@ class CardPageView extends StatelessWidget {
                 HomeString.cardMessageHeader,
                 style: Theme.of(context).textTheme.titleLarge,
               ),
-              const SizedBox(height: 16,),
+
+               SizedBox(height: 16.h,),
               defaultButton(
-                height: 32,
-                width: 128,
+                height: 32.h,
+                width: 128.w,
                 function: () {},
                 text: HomeString.order,
                 textStyle: Theme.of(context).textTheme.labelLarge,
-                radius: 360,
+                radius: 360.r,
+
               )
             ],
           ),

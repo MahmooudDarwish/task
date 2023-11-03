@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:task/core/services/services_locator.dart';
+
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task/core/utils/app_colors.dart';
-import 'package:task/features/home/presentation/controller/home_bloc.dart';
+
 import 'package:task/features/home/presentation/screens/views/card_slider.dart';
 import 'package:task/features/home/presentation/screens/views/tab_bar_items.dart';
 import 'package:task/features/home/presentation/screens/views/tab_bar_page_view.dart';
@@ -15,48 +15,46 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => sl<HomeBloc>(),
-      child: const HomeScreenView(),
-    );
-  }
-}
 
-class HomeScreenView extends StatelessWidget {
-  const HomeScreenView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
     return Scaffold(
-        body: Padding(
-            padding: const EdgeInsets.only(
-                left: 20.0, right: 20, top: 12, bottom: 16),
-            child: Column(children: [
-              const WelcomeUser(),
-              const WelcomeMessage(),
-              const SizedBox(
-                height: 16,
-              ),
-              const CardSlider(),
-              const SizedBox(
-                height: 16,
-              ),
-              Expanded(
+        body: Column(
+          children: [
+             Padding(
+                padding: EdgeInsets.only(
+                    left: 20.0.w, right: 20.w, top: 12.h),
+                child:  Column(children: [
+                  const WelcomeUser(),
+                  const WelcomeMessage(),
+                  SizedBox(
+                    height: 16.h,
+                  ),
+                  const CardSlider(),
+                  SizedBox(
+                    height: 16.h,
+                  ),
+
+                ])
+            ),
+            Expanded(
+              child: Padding(
+                padding:  EdgeInsets.only(bottom: 8.0.h),
                 child: Container(
                   color: Colors.white,
+                  padding:  EdgeInsets.symmetric(horizontal: 16.w),
                   child: Column(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 16.0),
+                        padding:  EdgeInsets.only(top: 16.0.h),
                         child: Container(
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12),
+                            borderRadius: BorderRadius.circular(12.r),
                             border: Border.all(
-                                width: 1, color: AppColors.tapBarBorderColor),
+                                width: 1.w, color: AppColors.tapBarBorderColor),
                           ),
-                          child: const Padding(
-                            padding: EdgeInsets.all(8.0),
-                            child: TabBarItems(),
+                          child:  Padding(
+                            padding: EdgeInsets.all(8.0.r),
+                            child: const TabBarItems(),
+
                           ),
                         ),
                       ),
@@ -64,7 +62,11 @@ class HomeScreenView extends StatelessWidget {
                     ],
                   ),
                 ),
-              )
-            ])));
+
+              ),
+            )
+          ],
+        ));
+
   }
 }

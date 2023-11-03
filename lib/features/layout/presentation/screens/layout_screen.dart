@@ -10,6 +10,7 @@ class LayoutScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return BlocProvider(
       create: (context) => sl<LayoutBloc>(),
       child: const LayoutView(),
@@ -22,6 +23,7 @@ class LayoutView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return BlocBuilder<LayoutBloc, LayoutScreenState>(
       builder: (context, state) {
         return Scaffold(

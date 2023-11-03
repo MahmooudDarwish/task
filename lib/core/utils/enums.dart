@@ -1,1 +1,9 @@
-enum TabBarItemType { categories, services, orders }
+
+enum TabBarItemType { users, services, orders }
+
+enum RequestState {
+  loading,
+  loaded,
+  error,
+}
+

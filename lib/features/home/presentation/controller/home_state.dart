@@ -2,6 +2,11 @@ part of 'home_bloc.dart';
 
 @immutable
 class HomeScreenState extends Equatable {
+
+  final List<User> userList;
+  final RequestState getUsersRequestState;
+  final String getUsersMessage;
+
   final int selectedBottomNavBatItem;
   final TabBarItemType selectedTabBarItem;
   final List<String> serviceList;
@@ -9,27 +14,38 @@ class HomeScreenState extends Equatable {
   final List<String> categoryList;
 
   const HomeScreenState(
-      {this.selectedBottomNavBatItem = 0,
-        this.selectedTabBarItem = TabBarItemType.categories,
-        this.ordersList = const [],
-        this.serviceList = const [],
-        this.categoryList = const [
-          HomeString.constructions,
-          HomeString.insurances,
-          HomeString.legal,
-          HomeString.buyAndSell,
-          HomeString.accountingServices
-        ]});
+
+      {this.userList = const [],
+      this.getUsersRequestState = RequestState.loading,
+      this.getUsersMessage = "",
+      this.selectedBottomNavBatItem = 0,
+      this.selectedTabBarItem = TabBarItemType.users,
+      this.ordersList = const [],
+      this.serviceList = const [],
+      this.categoryList = const [
+        HomeString.constructions,
+        HomeString.insurances,
+        HomeString.legal,
+        HomeString.buyAndSell,
+        HomeString.accountingServices
+      ]});
 
   HomeScreenState copyWith(
-      {int? selectedBottomNavBatItem,
-        TabBarItemType? selectedTabBarItem,
-        List<String>? serviceList,
-        List<String>? ordersList,
-        List<String>? categoryList}) {
+      {List<User>? userList,
+      RequestState? getUsersRequestState,
+      String? getUsersMessage,
+      int? selectedBottomNavBatItem,
+      TabBarItemType? selectedTabBarItem,
+      List<String>? serviceList,
+      List<String>? ordersList,
+      List<String>? categoryList}) {
     return HomeScreenState(
+        userList: userList ?? this.userList,
+        getUsersRequestState: getUsersRequestState ?? this.getUsersRequestState,
+        getUsersMessage: getUsersMessage ?? this.getUsersMessage,
         selectedBottomNavBatItem:
-        selectedBottomNavBatItem ?? this.selectedBottomNavBatItem,
+            selectedBottomNavBatItem ?? this.selectedBottomNavBatItem,
+
         selectedTabBarItem: selectedTabBarItem ?? this.selectedTabBarItem,
         ordersList: ordersList ?? this.ordersList,
         serviceList: serviceList ?? this.serviceList,
@@ -37,12 +53,17 @@ class HomeScreenState extends Equatable {
   }
 
   @override
-  // TODO: implement props
+
+
   List<Object?> get props => [
-    selectedBottomNavBatItem,
-    selectedTabBarItem,
-    serviceList,
-    ordersList,
-    categoryList
-  ];
+        userList,
+        getUsersRequestState,
+        getUsersMessage,
+        selectedBottomNavBatItem,
+        selectedTabBarItem,
+        serviceList,
+        ordersList,
+        categoryList
+      ];
+
 }

@@ -9,6 +9,6 @@ class ChangeBottomNavBarItemEvent extends LayoutEvent {
   final int selectedBottomNavBatItem;
   const ChangeBottomNavBarItemEvent({required this.selectedBottomNavBatItem});
   @override
-  // TODO: implement props
+
   List<Object?> get props => [selectedBottomNavBatItem];
 }
