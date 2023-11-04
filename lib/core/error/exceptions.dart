@@ -8,6 +8,7 @@ class ServerException implements Exception {
   });
 }
 
+//For scaling purposes
 class LocalDatabaseException implements Exception {
   final String message;
 
