@@ -42,7 +42,7 @@ class AppConstance {
         icon: Icon(CustomIcons.person), label: AppString.bottomNavBarProfile),
   ];
 
-  //handling bottom navigation bar navigation
+  //handling bottom navigation bar's navigation
   static const bottomNavBarScreens = [
     HomeScreen(),
     AssetsScreen(),

@@ -10,6 +10,5 @@ class LayoutScreenState extends Equatable {
           selectedBottomNavBatItem:
               selectedBottomNavBatItem ?? this.selectedBottomNavBatItem);
   @override
-  // TODO: implement props
   List<Object?> get props => [selectedBottomNavBatItem];
 }

@@ -10,13 +10,13 @@ part 'layout_state.dart';
 class LayoutBloc extends Bloc<LayoutEvent, LayoutScreenState> {
   LayoutBloc() : super(const LayoutScreenState()) {
     on<ChangeBottomNavBarItemEvent>(_changeBottomNavBarItem);
-
   }
 
-  FutureOr<void> _changeBottomNavBarItem(ChangeBottomNavBarItemEvent event, Emitter<LayoutScreenState> emit) {
+  FutureOr<void> _changeBottomNavBarItem(
+      ChangeBottomNavBarItemEvent event, Emitter<LayoutScreenState> emit) {
+    //update state with new bottom navigation bar item
     final updatedState = state.copyWith(
         selectedBottomNavBatItem: event.selectedBottomNavBatItem);
     emit(updatedState);
   }
 }
-

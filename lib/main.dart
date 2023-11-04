@@ -9,9 +9,11 @@ import 'package:task/features/home/presentation/controller/home_bloc.dart';
 import 'package:task/features/layout/presentation/controller/layout_bloc.dart';
 
 void main() {
+  ///INIT IMPORTANT PACKAGES
   ServicesLocator().init();
   sl<DioHelper>().init();
 
+  ///RUN
   runApp(
     MultiBlocProvider(
       providers: [
@@ -31,12 +33,13 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
+    //provide screen_util for responsive ui
     return ScreenUtilInit(
       designSize: const Size(360, 690),
       minTextAdapt: true,
       splitScreenMode: true,
-      // Use builder because we will use the library outside ScreenUtilInit context
       builder: (_, child) {
+        //manage the navigation between screens by go_router
         return MaterialApp.router(
           debugShowCheckedModeBanner: false,
           routerConfig: sl<GoRouter>(),

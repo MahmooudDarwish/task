@@ -12,7 +12,7 @@ Widget defaultListTile(
     padding: EdgeInsets.symmetric(vertical: 8.0.h),
     child: Container(
       decoration: BoxDecoration(
-          color: AppColors.tapBarItemColor, // Your desired background color
+          color: AppColors.tapBarItemColor,
           borderRadius: BorderRadius.circular(8.r),
           boxShadow: [
             BoxShadow(

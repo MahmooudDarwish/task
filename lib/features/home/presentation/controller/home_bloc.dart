@@ -19,6 +19,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeScreenState> {
 
   FutureOr<void> _tabBarItemsClicked(
       TabBarItemsClickedEvent event, Emitter<HomeScreenState> emit) {
+    //update state with the clicked tab bar item
     emit(state.copyWith(selectedTabBarItem: event.tabBarItemType));
   }
 }

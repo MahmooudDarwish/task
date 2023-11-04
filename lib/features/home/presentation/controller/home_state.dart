@@ -2,6 +2,7 @@ part of 'home_bloc.dart';
 
 @immutable
 class HomeScreenState extends Equatable {
+  ///ui logic
   final int selectedBottomNavBatItem;
   final TabBarItemType selectedTabBarItem;
   final List<String> serviceList;
@@ -10,26 +11,26 @@ class HomeScreenState extends Equatable {
 
   const HomeScreenState(
       {this.selectedBottomNavBatItem = 0,
-        this.selectedTabBarItem = TabBarItemType.categories,
-        this.ordersList = const [],
-        this.serviceList = const [],
-        this.categoryList = const [
-          HomeString.constructions,
-          HomeString.insurances,
-          HomeString.legal,
-          HomeString.buyAndSell,
-          HomeString.accountingServices
-        ]});
+      this.selectedTabBarItem = TabBarItemType.categories,
+      this.ordersList = const [],
+      this.serviceList = const [],
+      this.categoryList = const [
+        HomeString.constructions,
+        HomeString.insurances,
+        HomeString.legal,
+        HomeString.buyAndSell,
+        HomeString.accountingServices
+      ]});
 
   HomeScreenState copyWith(
       {int? selectedBottomNavBatItem,
-        TabBarItemType? selectedTabBarItem,
-        List<String>? serviceList,
-        List<String>? ordersList,
-        List<String>? categoryList}) {
+      TabBarItemType? selectedTabBarItem,
+      List<String>? serviceList,
+      List<String>? ordersList,
+      List<String>? categoryList}) {
     return HomeScreenState(
         selectedBottomNavBatItem:
-        selectedBottomNavBatItem ?? this.selectedBottomNavBatItem,
+            selectedBottomNavBatItem ?? this.selectedBottomNavBatItem,
         selectedTabBarItem: selectedTabBarItem ?? this.selectedTabBarItem,
         ordersList: ordersList ?? this.ordersList,
         serviceList: serviceList ?? this.serviceList,
@@ -39,10 +40,10 @@ class HomeScreenState extends Equatable {
   @override
   // TODO: implement props
   List<Object?> get props => [
-    selectedBottomNavBatItem,
-    selectedTabBarItem,
-    serviceList,
-    ordersList,
-    categoryList
-  ];
+        selectedBottomNavBatItem,
+        selectedTabBarItem,
+        serviceList,
+        ordersList,
+        categoryList
+      ];
 }
