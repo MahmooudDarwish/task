@@ -6,7 +6,7 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application done with the following:
 
-    1- Bloc StateMangement
+   1- Bloc StateMangement
    
    2- Clean architecture
    
