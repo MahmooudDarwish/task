@@ -20,14 +20,15 @@ class AppConstance {
   static const defaultUserImageUrl =
       "https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?w=740&t=st=1698870380~exp=1698870980~hmac=a7bd3a3c0ff243fdd01ef12877aa15ae74ded19fd7ab7e8279dc427d93ddc295";
 
-  ///BOTTOM NAVIGATION BAR
+  ///APP BAR
   static const appBarHeaders = [
-    AppString.bottomNavBarHome,
+    AppString.appBarHeaderHome,
     AppString.appBarHeaderAssets,
     AppString.appBarHeaderSupport,
     AppString.appBarHeaderProfile
   ];
 
+  ///BOTTOM NAVIGATION BAR
   static const bottomNavBarItems = [
     BottomNavigationBarItem(
         icon: Icon(CustomIcons.home), label: AppString.bottomNavBarHome),
