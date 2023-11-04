@@ -12,7 +12,7 @@ class LayoutBloc extends Bloc<LayoutEvent, LayoutScreenState> {
     on<ChangeBottomNavBarItemEvent>(_changeBottomNavBarItem);
 
   }
-
+  //update state with new bottom navigation bar item
   FutureOr<void> _changeBottomNavBarItem(ChangeBottomNavBarItemEvent event, Emitter<LayoutScreenState> emit) {
     final updatedState = state.copyWith(
         selectedBottomNavBatItem: event.selectedBottomNavBatItem);

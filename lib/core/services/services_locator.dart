@@ -31,8 +31,6 @@ class ServicesLocator {
     /// Use Cases
     sl.registerLazySingleton<GetUsersUseCase>(() => GetUsersUseCase(sl()));
 
-    ///TICKER PROVIDER
-
     /// Bloc
 
     sl.registerLazySingleton<HomeBloc>(() => HomeBloc(sl()));

@@ -7,6 +7,7 @@ class ServerException implements Exception {
     required this.errorMessageModel,
   });
 }
+//For scaling purposes
 
 class LocalDatabaseException implements Exception {
   final String message;

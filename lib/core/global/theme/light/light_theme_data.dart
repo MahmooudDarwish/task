@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task/core/utils/app_colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:task/features/home/presentation/screens/utils/home_colors.dart';
@@ -29,28 +30,28 @@ ThemeData getThemeDataLight() => ThemeData(
           centerTitle: true,
           titleTextStyle: getOutfitFontStyle(
               fontWeight: FontWeight.w500,
-              fontSize: 20,
+              fontSize: 20.sp,
               fontColor: HomeColors.appBarHeaderTextColor)),
       textTheme: TextTheme(
           titleLarge: getOutfitFontStyle(
               fontWeight: FontWeight.w500,
-              fontSize: 16,
+              fontSize: 16.sp,
               fontColor: HomeColors.heyUserTextColor),
           bodyMedium: getOutfitFontStyle(
-              fontSize: 14,
+              fontSize: 14.sp,
               fontColor: HomeColors.welcomeUserBodyTextColor,
               fontWeight: FontWeight.w300),
           labelLarge: getOutfitFontStyle(
               fontWeight: FontWeight.w500,
-              fontSize: 14,
+              fontSize: 14.sp,
               fontColor: AppColors.cardButtonHintTextColor),
           labelMedium: getOutfitFontStyle(
               fontWeight: FontWeight.w400,
-              fontSize: 14,
+              fontSize: 14.sp,
               fontColor: AppColors.activeTapBarHintTextColor),
           titleMedium: getOutfitFontStyle(
               fontWeight: FontWeight.w400,
-              fontSize: 16,
+              fontSize: 16.sp,
               fontColor: HomeColors.categoriesItemsDescriptionTextColor)),
     );
 

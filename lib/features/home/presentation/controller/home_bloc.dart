@@ -23,13 +23,18 @@ class HomeBloc extends Bloc<HomeEvent, HomeScreenState> {
 
   FutureOr<void> _tabBarItemsClicked(
       TabBarItemsClickedEvent event, Emitter<HomeScreenState> emit) {
+    //update state whit clicked tab bar item
     emit(state.copyWith(selectedTabBarItem: event.tabBarItemType));
   }
 
 
+  //method to get all users from api
   FutureOr<void> _getUsers(event, Emitter<HomeScreenState> emit) async {
+    ///execute use case
     final result = await getUsersUseCase.call(const NoParameters());
 
+
+    ///update state
     result.fold(
         (leftError) => emit(state.copyWith(
             getUsersRequestState: RequestState.error,

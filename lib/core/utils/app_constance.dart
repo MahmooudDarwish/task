@@ -11,19 +11,23 @@ import 'package:task/features/profile/presentation/screens/profile_screen.dart';
 import 'package:task/features/support/presentation/screens/support_screen.dart';
 
 class AppConstance {
+  ///ASSETS IMAGES
   static const clappingHandsImage = "assets/images/clappingHand.png";
   static const manHoldingBuildingImage = "assets/images/manHoldingBuilding.png";
   static const noListFoundImage = "assets/images/emptyState.png";
+  ///NETWORK IMAGES
+  static const defaultUserImageUrl =
+      "https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?w=740&t=st=1698870380~exp=1698870980~hmac=a7bd3a3c0ff243fdd01ef12877aa15ae74ded19fd7ab7e8279dc427d93ddc295";
 
+  ///APP BAR
   static const appBarHeaders = [
-    AppString.bottomNavBarHome,
+    AppString.appBarHeaderHome,
     AppString.appBarHeaderAssets,
     AppString.appBarHeaderSupport,
     AppString.appBarHeaderProfile
   ];
-  static const defaultUserImageUrl =
-      "https://img.freepik.com/free-psd/3d-illustration-human-avatar-profile_23-2150671142.jpg?w=740&t=st=1698870380~exp=1698870980~hmac=a7bd3a3c0ff243fdd01ef12877aa15ae74ded19fd7ab7e8279dc427d93ddc295";
 
+///BOTTOM NAVIGATION BAR
   static const bottomNavBarItems = [
     BottomNavigationBarItem(
         icon: Icon(CustomIcons.home), label: AppString.bottomNavBarHome),
@@ -36,20 +40,20 @@ class AppConstance {
     BottomNavigationBarItem(
         icon: Icon(CustomIcons.person), label: AppString.bottomNavBarProfile),
   ];
-
+//handling bottom navigation bar's navigation
   static const bottomNavBarScreens = [
     HomeScreen(),
     AssetsScreen(),
     SupportScreen(),
     ProfileScreen(),
   ];
-
+///CARD
   static const pageViewChildren = [
     CardPageView(),
     CardPageView(),
     CardPageView()
   ];
-
+///CATEGORY VIEW
   static List<Widget> categoryListView = [
     defaultListTile(
         title: HomeString.constructions,
