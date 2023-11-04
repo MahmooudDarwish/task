@@ -7,6 +7,7 @@ import 'package:task/features/layout/presentation/screens/layout_screen.dart';
 import 'package:task/features/profile/presentation/screens/profile_screen.dart';
 import 'package:task/features/support/presentation/screens/support_screen.dart';
 
+//will be used if we want to reach the screens without bottom navigation bar
 class Routes {
   static List<RouteBase> routes = <RouteBase>[
     GoRoute(

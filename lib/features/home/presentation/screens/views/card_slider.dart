@@ -16,14 +16,12 @@ class CardSlider extends StatelessWidget {
     return Column(
       children: [
         Padding(
-
-          padding:  EdgeInsets.only(bottom: 10.0.h),
+          padding: EdgeInsets.only(bottom: 10.0.h),
           child: Container(
             height: 152,
-            padding:  EdgeInsets.only(left: 8.w, top: 8.h, bottom: 12.h),
+            padding: EdgeInsets.only(left: 8.w, top: 8.h, bottom: 12.h),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(8.r),
-
                 color: AppColors.cardColor),
             child: PageView(
               controller: sl<HomeBloc>().pageViewController,
@@ -34,14 +32,12 @@ class CardSlider extends StatelessWidget {
         SmoothPageIndicator(
           controller: sl<HomeBloc>().pageViewController,
           count: AppConstance.pageViewChildren.length,
-
-          effect:  ExpandingDotsEffect(
+          effect: ExpandingDotsEffect(
               activeDotColor: AppColors.activeDotColor,
               dotColor: AppColors.inActiveDotColor,
               dotHeight: 8.h,
               dotWidth: 8.w,
               expansionFactor: 4.w),
-
         )
       ],
     );

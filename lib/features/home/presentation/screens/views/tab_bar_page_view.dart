@@ -28,6 +28,7 @@ class TabBarPageView extends StatelessWidget {
     );
   }
 
+  //get condition of which screen will be build
   bool _shouldShowView(HomeScreenState state) {
     switch (state.selectedTabBarItem) {
 
@@ -42,7 +43,7 @@ class TabBarPageView extends StatelessWidget {
         return false;
     }
   }
-
+ //build the selected screen
   Widget _buildSelectedView(HomeScreenState state) {
     switch (state.selectedTabBarItem) {
 

@@ -11,32 +11,25 @@ class WelcomeUser extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-
-      padding:  EdgeInsets.only(bottom: 8.0.h),
+      padding: EdgeInsets.only(bottom: 8.0.h),
       child: Row(
         children: [
-           CircleAvatar(
+          CircleAvatar(
             radius: 14.r,
             backgroundImage:
-            const NetworkImage(AppConstance.defaultUserImageUrl),
+                const NetworkImage(AppConstance.defaultUserImageUrl),
           ),
           Padding(
-            padding:  EdgeInsets.only(left: 4.0.w, right: 2.w),
-
+            padding: EdgeInsets.only(left: 4.0.w, right: 2.w),
             child: Text(
               HomeString.welcomeUser("Ahmed"),
-              style: Theme
-                  .of(context)
-                  .textTheme
-                  .titleLarge,
+              style: Theme.of(context).textTheme.titleLarge,
             ),
           ),
           Image.asset(
             AppConstance.clappingHandsImage,
-
             width: 20.w,
             height: 20.h,
-
           )
         ],
       ),

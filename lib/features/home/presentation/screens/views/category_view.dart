@@ -15,19 +15,15 @@ class CategoryView extends StatelessWidget {
       child: Column(
         children: [
           Padding(
-
-            padding:  EdgeInsets.only(left: 20.0.w, bottom: 8.h),
-
+            padding: EdgeInsets.only(left: 20.0.w, bottom: 8.h),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 Text(HomeString.categoriesView,
-
                     style: Theme.of(context)
                         .textTheme
                         .labelMedium!
                         .copyWith(color: HomeColors.categoriesViewTextColor)),
-
                 const Spacer(),
                 TextButton(
                     onPressed: () {},
@@ -47,7 +43,6 @@ class CategoryView extends StatelessWidget {
                 return AppConstance.categoryListView[index];
               },
               itemCount: AppConstance.categoryListView.length,
-
             ),
           ),
         ],

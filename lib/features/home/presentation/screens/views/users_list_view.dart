@@ -1,7 +1,5 @@
-import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:task/core/utils/app_colors.dart';
 import 'package:task/features/home/presentation/components/default_id_text.dart';
 import 'package:task/features/home/presentation/components/default_list_tile.dart';
 import 'package:task/features/home/presentation/controller/home_bloc.dart';
@@ -18,8 +16,7 @@ class UsersListView extends StatelessWidget {
           itemBuilder: (context, index) {
             return defaultListTile(
                 title: state.userList[index].name,
-                leadingWidget:
-                    getUserIdWidget(id: state.userList[index].id));
+                leadingWidget: getUserIdWidget(id: state.userList[index].id));
           },
           itemCount: state.userList.length,
         ),

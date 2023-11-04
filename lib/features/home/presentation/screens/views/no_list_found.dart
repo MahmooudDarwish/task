@@ -23,19 +23,15 @@ class NoListFound extends StatelessWidget {
               children: [
                 Image.asset(
                   AppConstance.noListFoundImage,
-
                   width: 250.w,
                   height: 200.h,
-
                 ),
                 Text(
                   HomeString.noListFound(
                     state.selectedTabBarItem,
                   ),
                   style: Theme.of(context).textTheme.titleLarge!.copyWith(
-
                       fontSize: 22.sp,
-
                       fontWeight: FontWeight.w700,
                       color: HomeColors.noListFoundTextColor),
                 ),
@@ -44,9 +40,7 @@ class NoListFound extends StatelessWidget {
                   HomeString.noListFoundHint(state.selectedTabBarItem),
                   style: Theme.of(context).textTheme.bodyMedium!.copyWith(
                       color: HomeColors.noListFoundHintTextColor,
-
                       fontSize: 20.sp),
-
                 ),
               ],
             ),
