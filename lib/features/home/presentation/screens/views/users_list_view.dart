@@ -12,28 +12,17 @@ class UsersListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<HomeBloc, HomeScreenState>(builder: (context, state) {
-      return ConditionalBuilder(
-        condition: state.userList.isNotEmpty,
-        builder: (context) {
-          return Expanded(
-            child: ListView.builder(
-              shrinkWrap: true,
-              itemBuilder: (context, index) {
-                return defaultListTile(
-                    title: state.userList[index].name,
-                    leadingWidget:
-                        getUserIdWidget(id: state.userList[index].id));
-              },
-              itemCount: state.userList.length,
-            ),
-          );
-        },
-        fallback: (context) {
-          return const Center(
-            child: CircularProgressIndicator(
-                color: AppColors.progressIndicatorColor),
-          );
-        },
+      return Expanded(
+        child: ListView.builder(
+          shrinkWrap: true,
+          itemBuilder: (context, index) {
+            return defaultListTile(
+                title: state.userList[index].name,
+                leadingWidget:
+                    getUserIdWidget(id: state.userList[index].id));
+          },
+          itemCount: state.userList.length,
+        ),
       );
     });
   }
